@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #00bcd4;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        #contact {
+            background-color: #e9ecef;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+        p {
+            color: #555;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Moji projekti</a></li>
+            <li><a href="services.html">Usluge</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Kontaktirajte me putem forme ispod:</p>
+        <form action="#" method="">
+            <input type="text" name="name" placeholder="Vaše ime" required><br>
+            <input type="email" name="email" placeholder="Vaš email" required><br>
+            <textarea name="message" placeholder="Vaša poruka" rows="5" required></textarea><br>
+            <button type="submit">Pošalji</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radoje Božić Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #00bcd4;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Moji projekti</a></li>
+            <li><a href="services.html">Usluge</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1>Zdravo, ja sam <span>Radoje Božić</span></h1>
+            <p>Frontend JavaScript Developer | PHP entuzijasta | AI Explorer</p>
+            <a href="#projects" class="cta">Pogledajte moje projekte</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Moji projekti</h2>
+        <p>Ovde su prikazani neki od mojih najvažnijih projekata:</p>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Projekat 1</h3>
+                <p>Kratak opis projekta i tehnologije korišćene.</p>
+            </div>
+            <div class="project-item">
+                <h3>Projekat 2</h3>
+                <p>Kratak opis projekta i tehnologije korišćene.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Usluge</h2>
+        <p>Ovo su usluge koje nudim:</p>
+        <ul>
+            <li>Frontend razvoj</li>
+            <li>Backend razvoj</li>
+            <li>Optimizacija sajtova</li>
+            <li>AI generisanje sadržaja</li>
+        </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Pročitajte moje najnovije članke:</p>
+        <div class="blog-list">
+            <div class="blog-item">
+                <h3>Članak 1</h3>
+                <p>Kratak opis članka.</p>
+            </div>
+            <div class="blog-item">
+                <h3>Članak 2</h3>
+                <p>Kratak opis članka.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Kontaktirajte me putem forme ispod:</p>
+        <form action="/backend/api/contact.php" method="POST">
+            <input type="text" name="name" placeholder="Vaše ime" required><br>
+            <input type="email" name="email" placeholder="Vaš email" required><br>
+            <textarea name="message" placeholder="Vaša poruka" rows="5" required></textarea><br>
+            <button type="submit">Pošalji</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
