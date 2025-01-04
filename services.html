@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usluge</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #00bcd4;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        #services {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+       <!-- Navigation -->
+       <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Moji projekti</a></li>
+            <li><a href="services.html" class="active">Usluge</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h1>Usluge</h1>
+        <p>Ovo su usluge koje nudim:</p>
+
+        <div class="services-grid">
+            <!-- Frontend Development -->
+            <div class="service-item" style="background-image: url('public/frontend.jpg');">
+                <div class="service-description">
+                    <h3>Frontend razvoj</h3>
+                    <p>Specijalizovan sam za kreiranje modernih i responzivnih sajtova koristeći tehnologije poput HTML-a, CSS-a, JavaScript-a i framework-a poput React-a. Fokus je na vizuelnoj privlačnosti i optimizaciji korisničkog iskustva.</p>
+                </div>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="service-item" style="background-image: url('public/backend.jpg');">
+                <div class="service-description">
+                    <h3>Backend razvoj</h3>
+                    <p>Nudim izradu robusnih i sigurnih server-side aplikacija. Koristim PHP, MySQL, i moderne framework-e poput Laravel-a za implementaciju baza podataka, API-ja i dinamičkog sadržaja.</p>
+                </div>
+            </div>
+
+            <!-- Website Optimization -->
+            <div class="service-item" style="background-image: url('public/seo.jpg');">
+                <div class="service-description">
+                    <h3>Optimizacija sajtova</h3>
+                    <p>Analiziram i unapređujem brzinu učitavanja, SEO performanse i ukupnu pristupačnost sajta. Cilj je povećanje vidljivosti na pretraživačima i bolje korisničko iskustvo.</p>
+                </div>
+            </div>
+
+            <!-- AI Content Generation -->
+            <div class="service-item" style="background-image: url('public/ai.jpg');">
+                <div class="service-description">
+                    <h3>AI generisanje sadržaja</h3>
+                    <p>Korišćenjem modernih AI alata poput ChatGPT-a i MidJourney-a, pomažem u kreiranju kvalitetnog sadržaja, od generisanja tekstova do vizualnih elemenata, prilagođenih potrebama vašeg brenda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

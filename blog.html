@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Moji projekti</a></li>
+            <li><a href="services.html">Usluge</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <h1>Dobrodošli na Blog</h1>
+        <p>Pregledajte članke i prijavite se za interaktivne funkcionalnosti!</p>
+
+        <!-- Articles -->
+        <div id="articles-container"></div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration">
+        <h2>Registracija</h2>
+        <form id="registration-form">
+            <input type="text" id="username" name="username" placeholder="Korisničko ime" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Lozinka" required>
+            <select id="role" name="role" required>
+                <option value="reader">Čitalac</option>
+                <option value="blogger">Bloger</option>
+            </select>
+            <button type="submit">Registruj se</button>
+        </form>
+    </section>
+
+    <script src="main1.js"></script>
+</body>
+</html>
